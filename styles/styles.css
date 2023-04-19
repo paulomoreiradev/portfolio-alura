@@ -36,13 +36,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 .meu__nome:hover{
     color: var(--cor-terciaria);
     font-size: 25px;
 }
 .apresentacao__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -73,7 +74,7 @@ body {
     font-size: 20px;   
 }
 
-.apresentacao__links__link {    
+.apresentacao__links__navegacao {    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,7 +83,7 @@ body {
     text-align: center;
     text-decoration: none;
     font-size: 24px;
-    width: 378px;
+    width: 50%;
     padding: 21.5px 0;
     border-radius: 8px;
     color: #F6F6F6;
@@ -95,8 +96,9 @@ body {
 .foto__perfil{
     
     border-radius: 10px;    
-    width: 360px;
-    height: 450px;    
+    /* width: 360px;
+    height: 450px;     */
+    width: 50%;
 }
 .rodape {
     background-color: var(--cor-terciaria);
@@ -114,4 +116,20 @@ body {
 .rodape__link:hover {
     color: #272727;
     font-size: 25px;
+}
+
+@media (max-width: 1200px){
+    .cabecalho {
+        padding: 10%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
 }
